@@ -1,0 +1,84 @@
+<!-- abonne-form.component.html -->
+<div class="header">
+    <h1>Gestion des Abonnés</h1>
+</div>
+<div class="container">
+    <h2>-- Créer un nouvelle abonné --</h2>
+    <form (submit)="createAbonne()">
+        <div class="row">
+            <div class="left">
+                <div class="form-group">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" [(ngModel)]="abonne.nom" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" [(ngModel)]="abonne.prenom" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="age">Âge</label>
+                    <input type="number" id="age" name="age" [(ngModel)]="abonne.age" required>
+                </div>
+                <div class="form-group">
+                    <label for="telephone">Telephone</label>
+                    <input type="text" id="telephone" name="telephone" [(ngModel)]="abonne.telephone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" [(ngModel)]="abonne.email" required>
+                </div>
+            </div>
+            <div class="right">
+                <div class="form-group">
+                    <label>Sexe</label>
+                    <div class="radio-group">
+                      <label>
+                        <input type="radio" name="sexe" value="M" [(ngModel)]="abonne.sexe" required>
+                        M
+                      </label>
+                      <label>
+                        <input type="radio" name="sexe" value="F" [(ngModel)]="abonne.sexe" required>
+                        F
+                      </label>
+                    </div>
+                  </div>
+                
+                <div class="form-group">
+                    <label for="profession">Profession</label>
+                    <input type="text" id="profession" name="profession" [(ngModel)]="abonne.profession" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="rue">Rue</label>
+                    <input type="number" id="rue" name="rue" [(ngModel)]="abonne.rue" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="ville">Ville</label>
+                    <input type="text" id="ville" name="ville" [(ngModel)]="abonne.ville" required>
+                </div>
+                 
+                <div class="form-group">
+                    <label for="pays">Pays</label>
+                    <input type="text" id="pays" name="pays" [(ngModel)]="abonne.pays" required>
+                </div>
+            </div>
+        </div>   
+        <div class="foot">
+            <div class="left_foot">
+                <button type="submit">Créer Abonné</button>
+            </div> 
+            <div class="right_foot">
+                <div class="form-group">
+                    <label for="idmotivation">Motivation</label>
+                    <input type="number" id="idmotivation" name="idmotivation" [(ngModel)]="abonne.idmotivation" required>
+                </div>
+            </div>
+        </div>     
+       
+    </form>
+</div>
+
+  

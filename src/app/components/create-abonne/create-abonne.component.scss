@@ -1,0 +1,65 @@
+/* abonne-form.component.css */
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.row .left{
+    margin-right: 150px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.row .right{
+    margin-top: 30px;
+}
+form {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 180px;
+    border-radius: 5px;
+    height: 60px;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: white;
+    color: rgb(4, 47, 126);
+    border: 0.2px solid rgb(165, 165, 165);
+    cursor: pointer;
+}
+
+button:hover {
+background-color: rgb(4, 47, 126);
+color: white;
+cursor: pointer;
+}
+
+.foot{
+    display: flex;
+    flex-direction: row;
+}
+
+.left_foot{
+    margin-right: 140px;
+}

@@ -1,0 +1,127 @@
+ .container{
+    margin-left: 20px;
+    margin-right: 20px;
+ }
+
+ nav{
+    height: 80px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Major Mono Display', monospace; 
+    background-color: rgb(4, 47, 126);
+    width: 100%;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+
+.logo{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bold;
+    display: flex;
+    margin-left: 20px;    
+}
+
+.logo a{
+    color:white;
+    text-decoration: none;
+}
+.logo:hover{
+    cursor: pointer;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+
+nav ul li a{
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    color: black;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+
+.checkbtn{
+    font-size: 15px;
+    color: rgb(0, 113, 242);
+    font-weight: bold;
+    font-size: 25px;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/*Nav end*/
+
+
+/* stroke */
+nav ul li a{
+  position: relative;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none; 
+}
+nav ul li a label svg{
+  display: none;
+}
+label{
+  color: white;
+}
+nav ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: rgb(0, 113, 242);
+  height: 1px;
+  
+}
+nav ul li a:hover:after {
+  width: 100%;
+  
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+  cursor: pointer;
+}
+nav ul li a:hover {
+  color: rgb(0, 113, 242);
+  cursor: pointer;
+}
+
+.containing{
+    margin: 10px;
+}

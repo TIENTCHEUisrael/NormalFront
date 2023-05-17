@@ -1,0 +1,43 @@
+<div class="header">
+    <div class="left">
+        <h1>Gestion des Abonnés </h1>        
+    </div>
+    <div class="container">
+        <h2>-- Liste des abonnés --</h2>
+        <table cellspacing="0">
+            <tr>
+                <th>Numéro</th>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Sexe</th>
+                <th>Telephone</th>
+                <th>Profession</th>
+                <th>Action</th>
+            </tr>
+            <tbody>
+
+                <tr *ngFor="let abonne of abonnes" >
+                    <td> {{abonne.id}} </td>
+                    <td> {{abonne.nom}} </td>
+                    <td> {{abonne.prenom}} </td>
+                    <td> {{abonne.email}} </td>
+                    <td> {{abonne.age}} </td>
+                    <td> {{abonne.sexe}} </td>
+                    <td> {{abonne.telephone}} </td>
+                    <td> {{abonne.profession}} </td>
+                    <td>
+                        <button  class="btn-edit" (click)="goToabonneDetails(abonne)">
+                            Edit
+                        </button>                        
+                        <button class="btn-delete" (click)="deleteabonne(abonne)">
+                            Del
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</div>

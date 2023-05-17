@@ -1,0 +1,37 @@
+<div class="container">
+    <nav appNavSticky>
+        <label class="logo" >
+            <span style="color: rgb(255, 255, 255); margin-left: 4px;"><a href="#">Normal</a></span>
+        </label>
+        <input type="checkbox" id="check" style="color: antiquewhite;">
+        <ul>
+            <li>
+                <a routerLink="/abonne">
+                    <label for="check">
+                        Abonne
+                    </label>
+                </a>
+            </li>
+
+            <li>
+                <a routerLink="/motivation">
+                    <label for="check">
+                        Motivation
+                    </label>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <label for="check">
+                        Other
+                    </label>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="containing">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>
